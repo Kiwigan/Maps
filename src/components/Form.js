@@ -7,11 +7,12 @@ import Maps from "./Maps";
 
 
 const Form = () => {
-    //const { error, isPending, data: kiosks } = useFetch('http://localhost:8000/kiosk');
+
     const [logitude, setLogitude] = useState(parseFloat(reactLocalStorage.get('lat', 40)));
     const [attitude, setAttitude] = useState(parseFloat(reactLocalStorage.get('lng', -80)));
-    //console.log(kiosks);
-    /*
+
+    //Code before implementing useFetch function
+    /*--------------------------------------------------------------
     for(let i = 0; i < kiosks.length; i++){
         console.log(kiosks[i]);
     }
@@ -32,8 +33,8 @@ const Form = () => {
             setKiosks(data);
             console.log(kiosks);
         })
-    }, [])*/
-    //const { error, isPending, data: kiosks } = useFetch('http://localhost:8000/kiosk');
+    }, [])
+    ----------------------------------------------------------------*/
 
     const handleSubmit = (e) => {
         //e.preventDefault();  
