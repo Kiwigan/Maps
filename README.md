@@ -1,6 +1,6 @@
 # Patient Kiosk Finder
 
-<h3>Dependencies:<h3>
+<h3>Dependencies:</h3>
 google-maps-react
 reactjs-localstorage
 json-server
@@ -8,10 +8,10 @@ json-server
 
 To run type "npm run start" on console
 
-<h2>Tech Stack</h2>
+<h3>Tech Stack</h3>
 Built with React.js Framework and BootStrap 5. 
 
-<h2>Assumtions Made</h2>
+<h3>Assumtions Made</h3>
 The user is aware of his longitude and latitude.
 
 <h2>Challenges Faced</h2>
