@@ -54,8 +54,6 @@ const Maps = (lat) => {
     const {isLoaded} = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_MAPS_URL,
     });
-    console.log('test:' + process.env.REACT_APP_TEST);
-    console.log(process.env.REACT_APP_MAPS_URL);
     
     if(!isLoaded) return <div>Loading...</div>;
     return ( 
