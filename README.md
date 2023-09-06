@@ -1,7 +1,12 @@
 # Patient Kiosk Finder
 
-To run type "npm run start" on console
+<h3>Dependencies:<h3>
+google-maps-react
+reactjs-localstorage
+json-server
 
+
+To run type "npm run start" on console
 
 <h2>Tech Stack</h2>
 Built with React.js Framework and BootStrap 5. 
