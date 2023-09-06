@@ -4,8 +4,10 @@ import useFetch from "./useFetch";
 import React from 'react';
 
 
+//REQUIREMENT 2
+//This was the attempt to place the 5 closest kiosk markers. Was not able to manipulate the JSON data as it comes out as null when running it through the forEach method
 
-/*
+/*-------------------------------------------------------------------------------------------------------------------
 async function Location(position){
     const { error, isPending, data: kiosks } = await useFetch('http://localhost:8000/kiosk');
     console.log(kiosks);
@@ -46,10 +48,9 @@ function calculateDistance(x1, y1, x2, y2){
 
     
 }
-*/
+----------------------------------------------------------------------------------------*/
 
-//<Location location={lat}/>
-//const center = {lat:1.3046688076702777, lng: 103.80008079564587}
+
 const Maps = (lat) => {
     const {isLoaded} = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_MAPS_URL,
