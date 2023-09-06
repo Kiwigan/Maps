@@ -4,6 +4,7 @@ import useFetch from "./useFetch";
 import React from 'react';
 
 
+
 /*
 async function Location(position){
     const { error, isPending, data: kiosks } = await useFetch('http://localhost:8000/kiosk');
@@ -51,9 +52,11 @@ function calculateDistance(x1, y1, x2, y2){
 //const center = {lat:1.3046688076702777, lng: 103.80008079564587}
 const Maps = (lat) => {
     const {isLoaded} = useLoadScript({
-        googleMapsApiKey: "AIzaSyCUvExdvtB4lKu2IJjTfBka8254ImunKnk",
+        googleMapsApiKey: process.env.REACT_APP_MAPS_URL,
     });
-    console.log(lat);
+    console.log('test:' + process.env.REACT_APP_TEST);
+    console.log(process.env.REACT_APP_MAPS_URL);
+    
     if(!isLoaded) return <div>Loading...</div>;
     return ( 
         <GoogleMap zoom={15} center={lat} mapContainerClassName='map-container'>

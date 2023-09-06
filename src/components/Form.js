@@ -55,7 +55,7 @@ const Form = () => {
                 step="0.0001"
                 value={logitude}
                 onChange={(e) => setLogitude(e.target.value)}/>
-                <label className="col-form-label">Attitude</label>
+                <label className="col-form-label">Latitude</label>
                 <input
                 className="form-control"
                 type="number"
